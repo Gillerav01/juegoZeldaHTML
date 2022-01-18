@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "zelda";
+    src: url("../assets/fuentes/Triforce.ttf");
+}
+
+* {
+    font-family: "zelda", Comic Sans;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/img/fondo.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pantalla-inicio {
+    width: 50vw;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 7vh;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: .5rem;
+    font-size: 2rem;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    font-size: 2rem;
+    outline: none;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+button > span {
+    opacity: 0;
+}
+
+button:hover > span {
+    opacity: 1;
+}
+
+td {
+    background-image: url("../assets/suelo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
